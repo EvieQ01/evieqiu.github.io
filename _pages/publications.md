@@ -4,69 +4,183 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-### 1. Identifying Selections for Unsupervised Subtask Discovery. [[arxiv](https://arxiv.org/pdf/2410.21616v1)] (NeurIPS 2024)
 
-**Yiwen Qiu**, Yujia Zheng, Kun Zhang
+<style>
+.pub-list { margin-top: 1.5em; }
+.pub-card {
+  display: flex;
+  gap: 1.3em;
+  padding: 1.3em 1.5em;
+  margin-bottom: 1.4em;
+  border: 1px solid #e6e8eb;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+}
+.pub-card:hover {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.09);
+  transform: translateY(-2px);
+  border-color: #d0d4d9;
+}
+.pub-thumb {
+  flex: 0 0 210px;
+  align-self: center;
+}
+.pub-thumb img {
+  width: 100%;
+  border-radius: 9px;
+  display: block;
+}
+.pub-body { flex: 1 1 auto; min-width: 0; }
+.pub-venue {
+  display: inline-block;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #0085a1;
+  background: rgba(0,133,161,0.10);
+  padding: 0.28em 0.75em;
+  border-radius: 999px;
+  margin-bottom: 0.65em;
+}
+.pub-venue.spotlight {
+  color: #b8860b;
+  background: rgba(184,134,11,0.13);
+}
+.pub-title {
+  font-size: 1.08em;
+  font-weight: 700;
+  line-height: 1.38;
+  margin: 0 0 0.45em 0;
+  color: #1a1a1a;
+}
+.pub-authors {
+  font-size: 0.92em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0.85em;
+}
+.pub-authors .me { color: #1a1a1a; font-weight: 700; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 0.55em; }
+.pub-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.82em;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: #0085a1;
+  border: 1px solid #0085a1;
+  padding: 0.32em 0.95em;
+  border-radius: 999px;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.pub-btn:hover {
+  background: #0085a1;
+  color: #fff !important;
+}
+@media (max-width: 600px) {
+  .pub-card { flex-direction: column; gap: 1em; }
+  .pub-thumb { flex-basis: auto; }
+}
+</style>
 
-<center>
-    <img src="../images/selection_subtask.png" width="600"  />
-</center>
+<div class="pub-list" markdown="0">
+<div class="pub-card"> 
+<div class="pub-thumb">
+    <img src="../images/icml2026.png" alt="Towards a Holistic Understanding of Selection Bias for Causal Effect Identification" />
+  </div>
+  <div class="pub-body">
+    <span class="pub-venue">ICML 2026</span>
+    <p class="pub-title">Towards a Holistic Understanding of Selection Bias for Causal Effect Identification</p>
+    <p class="pub-authors"><span class="me">Yiwen Qiu</span>, Filip Kovačević, Shimeng Huang, Peter Spirtes, Francesco Locatello</p>
+    <div class="pub-links">
+      <a class="pub-btn" href="https://arxiv.org/pdf/2605.13430" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </div>
+</div>
 
-### 2. Detecting and Identifying Selection Structure in Sequential Data. [[arxiv](https://arxiv.org/pdf/2407.00529)] (ICML 2024)
+<div class="pub-card">
+  <div class="pub-thumb">
+    <img src="../images/icml2025.png" alt="Latent Variable Causal Discovery under Selection Bias" />
+  </div>
+  <div class="pub-body">
+    <span class="pub-venue">ICML 2025</span>
+    <p class="pub-title">Latent Variable Causal Discovery under Selection Bias</p>
+    <p class="pub-authors">Haoyue Dai, <span class="me">Yiwen Qiu</span>, Ignavier Ng, Xinshuai Dong, Peter Spirtes, Kun Zhang</p>
+    <div class="pub-links">
+      <a class="pub-btn" href="https://arxiv.org/pdf/2512.11219" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </div>
+</div>
 
-Yujia Zheng, Zeyu Tang, **Yiwen Qiu**, Bernhard Schölkopf, Kun Zhang
+<div class="pub-card">
+  <div class="pub-thumb">
+    <img src="../images/selection_subtask.png" alt="Identifying Selections for Unsupervised Subtask Discovery" />
+  </div>
+  <div class="pub-body">
+    <span class="pub-venue">NeurIPS 2024</span>
+    <p class="pub-title">Identifying Selections for Unsupervised Subtask Discovery</p>
+    <p class="pub-authors"><span class="me">Yiwen Qiu</span>, Yujia Zheng, Kun Zhang</p>
+    <div class="pub-links">
+      <a class="pub-btn" href="https://arxiv.org/pdf/2410.21616v1" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </div>
+</div>
 
-<center>
-    <img src="../images/selection_sequential.png" width="600"  />
-</center>
-<!-- Abstract: We argue that the selective inclusion of data points based on latent objectives is common in practical situations, such as music sequences. Since this selection process often distorts statistical analysis, previous work primarily views it as a bias to be corrected and proposes various methods to mitigate its effect. However, while controlling this bias is crucial, selection also offers an opportunity to provide a deeper insight into the hidden generation process, as it is a fundamental mechanism underlying what we observe. In particular, overlooking selection in sequential data can lead to an incomplete or overcomplicated inductive bias in modeling, such as assuming a universal autoregressive structure for all dependencies. Therefore, rather than merely viewing it as a bias, we explore the causal structure of selection in sequential data to delve deeper into the complete causal process. Specifically, we show that selection structure is identifiable without any parametric assumptions or interventional experiments. Moreover, even in cases where selection variables coexist with latent confounders, we still establish the nonparametric identifiability under appropriate structural conditions. Meanwhile, we also propose a provably correct algorithm to detect and identify selection structures as well as other types of dependencies. The framework has been validated empirically on both synthetic data and real-world music. -->
+<div class="pub-card">
+  <div class="pub-thumb">
+    <img src="../images/selection_sequential.png" alt="Detecting and Identifying Selection Structure in Sequential Data" />
+  </div>
+  <div class="pub-body">
+    <span class="pub-venue">ICML 2024</span>
+    <p class="pub-title">Detecting and Identifying Selection Structure in Sequential Data</p>
+    <p class="pub-authors">Yujia Zheng, Zeyu Tang, <span class="me">Yiwen Qiu</span>, Bernhard Schölkopf, Kun Zhang</p>
+    <div class="pub-links">
+      <a class="pub-btn" href="https://arxiv.org/pdf/2407.00529" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </div>
+</div>
 
-### 3. Data-driven predictive control using closed-loop data: An instrumental variable approach. [[arxiv](https://arxiv.org/pdf/2309.05916)] (IEEE Control Systems Letters, 2023)
+<div class="pub-card">
+  <div class="pub-body">
+    <span class="pub-venue">IEEE L-CSS 2023</span>
+    <p class="pub-title">Data-Driven Predictive Control Using Closed-Loop Data: An Instrumental Variable Approach</p>
+    <p class="pub-authors">Yibo Wang, <span class="me">Yiwen Qiu</span>, Malika Sader, Dexian Huang, Chao Shang</p>
+    <div class="pub-links">
+      <a class="pub-btn" href="https://arxiv.org/pdf/2309.05916" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </div>
+</div>
 
-Yibo Wang, **Yiwen Qiu**, Malika Sader, Dexian Huang, Chao Shang
+<div class="pub-card">
+  <div class="pub-thumb">
+    <img src="../images/1_transferable_demonstrations.jpeg" alt="Out-of-Dynamics Imitation Learning from Multimodal Demonstrations" />
+  </div>
+  <div class="pub-body">
+    <span class="pub-venue">CoRL 2022</span>
+    <p class="pub-title">Out-of-Dynamics Imitation Learning from Multimodal Demonstrations</p>
+    <p class="pub-authors"><span class="me">Yiwen Qiu</span>, Jialong Wu, Zhangjie Cao, Mingsheng Long</p>
+    <div class="pub-links">
+      <a class="pub-btn" href="https://openreview.net/forum?id=X6CjiTWVRVr" target="_blank" rel="noopener">OpenReview</a>
+      <a class="pub-btn" href="https://arxiv.org/abs/2211.06839v1" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </div>
+</div>
 
-<!-- Abstract: Current data-driven predictive control (DDPC)
-methods heavily rely on data collected in open-loop operation
-with elaborate design of inputs. However, due to safety or
-economic concerns, systems may have to be under feedback
-control, where only closed-loop data are available. In this
-context, it remains challenging to implement DDPC using
-closed-loop data. In this paper, we propose a new DDPC method
-using closed-loop data by means of instrumental variables (IVs).
-By drawing from closed-loop subspace identification, the use of
-two forms of IVs is suggested to address the closed-loop issues
-caused by feedback control and the correlation between inputs
-and noise. Furthermore, a new DDPC formulation with a novel
-IV-inspired regularizer is proposed, where a balance between
-control cost minimization and weighted least-squares data
-fitting can be made for improvement of control performance.
-Numerical examples and application to a simulated industrial
-furnace showcase the improved performance of the proposed
-DDPC based on closed-loop data. -->
+<div class="pub-card">
+  <div class="pub-thumb">
+    <img src="../images/2_wheel_legged.jpeg" alt="When to Trust Your Simulator" />
+  </div>
+  <div class="pub-body">
+    <span class="pub-venue spotlight">NeurIPS 2022 · Spotlight</span>
+    <p class="pub-title">When to Trust Your Simulator: Dynamics-Aware Hybrid Offline-and-Online Reinforcement Learning</p>
+    <p class="pub-authors">Haoyi Niu, Shubham Sharma, <span class="me">Yiwen Qiu</span>, Ming Li, Guyue Zhou, Jianming Hu, Xianyuan Zhan</p>
+    <div class="pub-links">
+      <a class="pub-btn" href="https://arxiv.org/abs/2206.13464v1" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </div>
+</div>
 
-
-### 4. Out-of-Dynamics Imitation Learning from Multimodal Demonstrations. [[OpenReview](https://openreview.net/forum?id=X6CjiTWVRVr)][[arxiv](https://arxiv.org/abs/2211.06839v1)] (CoRL 2022)
-
-**Yiwen Qiu**, Jialong Wu, Zhangjie Cao, Mingsheng Long
-
-<!-- **Abstract**: Existing imitation learning works mainly assume that the demonstrator who collects demonstrations share the same dynamics as the imitator. However, the assumption limits the usage of imitation learning, especially when collecting demonstrations for the imitator is difficult. In this paper, we study out-of-dynamics imitation learning (OOD-IL), which relaxes the assumption to that the demonstrator and the imitator have the same state spaces but could have different action spaces and dynamics. **OOD-IL enables imitation learning to utilize demonstrations from a wide range of demonstrators** but introduces a new challenge: some demonstrations cannot be achieved by the imitator due to the different dynamics. We **firstly** design a novel sequence-based contrastive clustering algorithm to cluster demonstrations from the same mode to avoid the mutual interference of demonstrations from different modes, and then **learn the transferability** of each demonstration with an adversarial-learning based algorithm in each cluster.  We show the videos of our experiment results on our [website](https://sites.google.com/view/oodil). -->
-
-
-<center>
-    <img src="../images/1_transferable_demonstrations.jpeg" width="600"  />
-    <!-- <figcaption>{ includeresults on our [website](https://sites.google.com/view/oodil)}</figcaption> -->
-</center>
-
-### 5. When to Trust Your Simulator: Dynamics-Aware Hybrid Offline-and-Online Reinforcement Learning. [[arxiv](https://arxiv.org/abs/2206.13464v1)] (NeurIPS 2022 *Spotlight*)
-
-Haoyi Niu, Shubham Sharma, **Yiwen Qiu**, Ming Li, Guyue Zhou, Jianming Hu, Xianyuan Zhan
-
-<!-- **Abstract**: Is it possible to combine learning from limited real data in offline RL and unrestricted exploration through imperfect simulators in online RL to address the drawbacks of both approaches? In this study, we propose the Dynamics-Aware Hybrid Offline-and-Online Reinforcement Learning (H2O) framework to provide an affirmative
- answer to this question. H2O introduces a dynamics-aware policy evaluation
- scheme, which adaptively penalizes the Q function learning on simulated state-
-action pairs with large dynamics gaps, while also simultaneously allowing learning
- from a fixed real-world dataset. -->
-
-<center>
-    <img src="../images/2_wheel_legged.jpeg" width="600"  />
-</center>
+</div>

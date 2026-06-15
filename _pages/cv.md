@@ -11,12 +11,14 @@ redirect_from:
 You can check my cv in the following link.
 
 <!-- ### [Download](../files/CV_YiwenQiu.pdf) -->
-### [Download](https://github.com/EvieQ01/evieqiu.github.io/blob/qyw/files/CV_YiwenQiu.pdf)
-<!-- ### [Download](https://github.com/EvieQ01/evieqiu.github.io/raw/qyw/files/CV_YiwenQiu.pdf) -->
+### [Download]({{ base_path }}/files/CV_YiwenQiu_06_2026.pdf)<!-- ### [Download](https://github.com/EvieQ01/evieqiu.github.io/raw/qyw/files/CV_YiwenQiu_06_2026.pdf) -->
 
 Education
 ======
-* B.S. in Beijing, China, Tsinghua University, 2023
+* Ph.D. in Computer Science, ISTA (Institute of Science and Technology Austria), 2025 - Present
+  * ELLIS Program, co-supervised by Francesco Locatello and Bernhard Schölkopf
+* M.S. in Logic, Computation and Methodology, Carnegie Mellon University, 2025
+* B.S. in Automation, Tsinghua University, 2023
 
 <!-- 
 * M.S. in Jekyll, GitHub University, 2014

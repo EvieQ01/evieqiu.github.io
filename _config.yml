@@ -83,11 +83,11 @@ author:
   name             : "Yiwen Qiu (Evie)"
   avatar           : "bio-photo.jpeg"
   bio              : "A continuous learner :)"
-  location         : "Pittsburgh, Pennsylvania, United States"
+  location         : "Vienna, Austria"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=tumZYG0AAAAJ&hl=en"
-  email            : yiwenq@andrew.cmu.edu
+  email            : yiwen.qiu@ista.ac.at
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/EvieQ01"
+  github           : "EvieQ01"
   google_plus      :
   keybase          :
   instagram        :
